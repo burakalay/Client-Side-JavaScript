@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pizza Maker</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>🍕 Pizza Order Form</h1>
+  <p id="student-info"></p>
+</header>
+
+<main>
+  <form id="pizza-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label>Pizza Size:</label><br>
+    <input type="radio" name="size" value="small" required> Small<br>
+    <input type="radio" name="size" value="mid"> Medium<br>
+    <input type="radio" name="size" value="large"> Large<br><br>
+
+    <label>Hamur Tipi:</label>
+    <select id="crust" name="crust">
+      <option value="thin">Thin</option>
+      <option value="thick">Thick</option>
+      <option value="Chesse Stuffed">Cheese Stuffed</option>
+    </select><br><br>
+
+    <label>Malzemeler:</label><br>
+    <input type="checkbox" name="toppings" value="Sujuk"> Sujuk<br>
+    <input type="checkbox" name="toppings" value="Mushroom "> Mushroom<br>
+    <input type="checkbox" name="toppings" value="Olive"> Olive<br>
+    <input type="checkbox" name="toppings" value="Mozzarella"> Mozzarella<br><br>
+
+    <label>Delivery:</label>
+    <select id="delivery" name="delivery">
+      <option value="Delivery to home">Home Delivery</option>
+      <option value="Take Away">Take Away</option>
+    </select><br><br>
+
+    <button type="submit">Order</button>
+  </form>
+
+  <section id="order-summary"></section>
+</main>
+</body>
+</html>
